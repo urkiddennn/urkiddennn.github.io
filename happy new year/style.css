@@ -42,6 +42,16 @@ p {
     font-size: 10px;
   }
 }
+@media only screen and (min-width: 768px) {
+  span {
+    display: inline-block;
+    color: #fff;
+    font-size: 10em;
+    font-weight: bold;
+    transition: 2s;
+    filter: blur(1px);
+  }
+}
 .happy {
   position: absolute;
   left: 0;
