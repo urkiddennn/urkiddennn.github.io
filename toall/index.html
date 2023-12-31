@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Countdown</title>
+  </head>
+  <body>
+    <p id="hidden-paragraph">HAPPY NEW YEAR</p>
+    <div class="box">
+      <span>2</span>
+      <span>0</span>
+      <span>2</span>
+      <span id="numYear">3</span>
+    </div>
+    <p id="clock">sss</p>
+    <div class="happy">
+      <h1>Happy New Year Everyone</h1>
+    </div>
+    <script>
+      var clock = document.getElementById("clock");
+      var numYear = document.getElementById("numYear");
+      var newY = document.getElementById("hidden-paragraph");
+      var happy = document.getElementById("happy");
+
+      function updateClock() {
+        var currentDate = new Date();
+        var currentHours = currentDate.getHours();
+        var currentMinutes = currentDate.getMinutes();
+        var currentSeconds = currentDate.getSeconds();
+
+        var ampm = currentHours >= 12 ? "PM" : "AM";
+        currentHours = currentHours % 12;
+        currentHours = currentHours ? currentHours : 12; // Handle midnight (12 AM)
+
+        clock.innerText =
+          "Current Time: " +
+          formatTime(currentHours) +
+          ":" +
+          formatTime(currentMinutes) +
+          ":" +
+          formatTime(currentSeconds) +
+          " " +
+          ampm;
+        if (currentHours == 12) {
+          numYear.innerText = "4";
+          newY.style.display = "block";
+          happy.style.display = "block";
+        }
+      }
+
+      function formatTime(time) {
+        return time < 10 ? "0" + time : time;
+      }
+
+      // Update the clock every second (1000 milliseconds)
+      setInterval(updateClock, 1000);
+
+      // Initial update when the page loads
+      updateClock();
+    </script>
+  </body>
+</html>
