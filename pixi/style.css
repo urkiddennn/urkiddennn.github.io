@@ -7,6 +7,10 @@
   --color1: #7f8487;
   --green: #38e54d;
 }
+
+body {
+  background-color: var(--bg-color1);
+}
 body::-webkit-scrollbar {
   width: 1em;
 }
@@ -16,11 +20,8 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #ea5455;
+  background-color: darkgrey;
   outline: 1px solid slategrey;
-}
-body {
-  background-color: var(--bg-color1);
 }
 body::-webkit-scrollbar {
   width: 1em;
