@@ -1,0 +1,25 @@
+@media only screen and (max-width: 500px) {
+  .logo-container {
+    width: 150px;
+    height: 100px;
+  }
+  .logo-container img {
+    width: 100px;
+    height: 100px;
+  }
+  .menu-container:hover .txt-pre {
+    left: 6%;
+    transform: translateY(50px);
+    width: 100px;
+    height: 50px;
+  }
+  .menus {
+    right: 6%;
+    top: 36%;
+    transform: translateY(50px);
+  }
+}
+@media only screen and (max-width: 768px) {
+}
+@media only screen and (min-width: 768px) {
+}
