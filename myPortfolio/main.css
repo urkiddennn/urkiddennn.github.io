@@ -1,0 +1,419 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@200;600;800&display=swap");
+
+:root {
+  --bg-color1: #111827;
+  --bg-color: #0c101a;
+  --color1: #ff6868;
+  --color2: #ffbb64;
+  --color3: #03c988;
+  --color4: #d63484;
+  --color5: #356eff;
+  font-family: "Lexend", sans-serif;
+}
+* {
+  color: WHITE;
+}
+a {
+  text-decoration: none;
+}
+body {
+  min-height: 100vh;
+  margin: 0;
+  font-size: 1.5rem;
+  background-color: var(--bg-color);
+  display: flex;
+  flex-direction: column;
+  transition: 1s;
+  scroll-behavior: smooth;
+  transition: 1s;
+  width: 100%;
+}
+.shape {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  z-index: -1;
+  filter: blur(4px);
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  background-color: var(--bg-color1);
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: 1s;
+  width: 100px;
+  z-index: 1000;
+}
+
+.navbar ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: grid;
+  gap: 3rem;
+  padding-block: 2rem;
+  font-size: 12px;
+  width: 100%;
+}
+.navbar ul li {
+  display: flex;
+  justify-content: center;
+}
+ul:hover a {
+  color: aliceblue;
+}
+.navbar ul a {
+  text-decoration: none;
+  color: #4b5563;
+  font-weight: 700;
+}
+.navbar ul li a:hover {
+  color: aliceblue;
+}
+main {
+  min-width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 6rem;
+}
+.mask-img {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  border-radius: 50%;
+  overflow: hidden;
+  -webkit-box-shadow: -1px 10px 142px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 10px 142px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: -1px 10px 142px 0px rgba(0, 0, 0, 0.75);
+  transition: 400ms;
+}
+.mask-img:hover {
+  width: 350px;
+  height: 350px;
+}
+.txtTitle {
+  color: aliceblue;
+  margin-right: 4rem;
+}
+.txtTitle h1 {
+  line-height: 4rem;
+}
+.lastName {
+  background: -webkit-linear-gradient(#ff6868, #ffbb64);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 6rem;
+}
+.btn-about {
+  width: 450px;
+  height: 40px;
+  background-color: var(--color3);
+  font-size: 15px;
+  padding: 10px 30px 10px 30px;
+  color: aliceblue;
+  font-weight: 700;
+}
+.icons {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin: 2rem 0.5rem 0 0;
+  transition: 300ms;
+}
+.icons {
+  fill: #4b5563;
+}
+.icons:hover {
+  width: 2rem;
+  height: 2rem;
+}
+.icons:nth-child(1):hover {
+  fill: var(--color1);
+}
+.icons:nth-child(2):hover {
+  fill: #356eff;
+}
+.icons:nth-child(4):hover {
+  fill: #356eff;
+}
+.icons:nth-child(5):hover {
+  fill: var(--color3);
+}
+.icons:nth-child(3):hover {
+  fill: var(--color2);
+}
+.web {
+  color: var(--color1);
+  font-weight: 600;
+}
+section {
+  width: 100%;
+  height: 100vh;
+}
+section #about {
+}
+.social-txt {
+  width: 300px;
+  height: 100px;
+  background-color: var(--color1);
+  color: var(--bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 1000;
+  font-size: 2.5rem;
+}
+.icons-floating {
+  font-size: 4rem;
+  margin-top: 4rem;
+  background-color: none;
+  animation-name: float;
+  animation-duration: 5s;
+  animation-delay: 0s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+@keyframes float {
+  0% {
+    transform: translateY(20px);
+  }
+  50% {
+    transform: translateY(-40px);
+  }
+  100% {
+    transform: translateY(40px);
+  }
+}
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.soc-icons {
+  width: 70px;
+  height: 70px;
+  margin-top: 3rem;
+  fill: var(--bg-color1);
+  transition: 300ms;
+}
+.soc-icons:hover {
+  fill: aliceblue;
+  transform: translateY(-10px);
+  rotate: 20deg;
+}
+#about-info {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  position: relative;
+}
+#about-info p {
+  color: aliceblue;
+}
+#about-info p span {
+  color: var(--color3);
+  font-weight: 1000;
+  animation-name: colorChange;
+  animation-duration: 5s;
+  animation-delay: 0s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+#about-info h1 {
+  font-size: 3rem;
+  color: aliceblue;
+}
+@keyframes colorChange {
+  0% {
+    color: var(--color1);
+  }
+  50% {
+    color: var(--color2);
+  }
+  100% {
+    color: var(--color3);
+  }
+}
+#spel {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.progress {
+  width: 800px;
+  height: 20px;
+  border-radius: 5px;
+  border: 2px solid var(--bg-color1);
+  overflow: hidden;
+}
+.span-mask {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.progress:nth-child(1) .span-mask {
+  width: 80%;
+  animation-name: progress1;
+  animation-duration: 10s;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+@keyframes progress1 {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 80%;
+  }
+}
+.span-mask:nth-child(1) {
+  background-color: var(--color2);
+}
+.progress:nth-child(2) .span-mask {
+  width: 76%;
+  animation-name: progress2;
+  animation-duration: 10s;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+@keyframes progress2 {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 76%;
+  }
+}
+.progress:nth-child(2) .span-mask {
+  background-color: var(--color5);
+}
+.progress:nth-child(3) .span-mask {
+  width: 60%;
+  animation-name: progress3;
+  animation-duration: 10s;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+@keyframes progress3 {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 60%;
+  }
+}
+.progress:nth-child(3) .span-mask {
+  background-color: var(--color1);
+}
+.progress:nth-child(4) .span-mask {
+  width: 36%;
+  animation-name: progress4;
+  animation-duration: 10s;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+@keyframes progress4 {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 36%;
+  }
+}
+.progress:nth-child(4) .span-mask {
+  background-color: var(--color5);
+}
+.progress:nth-child(5) .span-mask {
+  width: 23%;
+  animation-name: progress5;
+  animation-duration: 10s;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+@keyframes progress5 {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 23%;
+  }
+}
+.progress:nth-child(5) .span-mask {
+  background-color: var(--color4);
+}
+.progress span {
+  font-size: 15px;
+  font-weight: 700;
+  margin-left: 10px;
+  color: var(--bg-color);
+}
+.special {
+  font-weight: 400;
+}
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateY(20px);
+  transition: all 1s;
+}
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateY(0);
+}
+.progress:nth-child(1) {
+  transition-delay: 200ms;
+}
+.progress:nth-child(2) {
+  transition-delay: 400ms;
+}
+
+.progress:nth-child(3) {
+  transition-delay: 600ms;
+}
+
+.progress:nth-child(4) {
+  transition-delay: 800ms;
+}
+
+.progress:nth-child(5) {
+  transition-delay: 1000ms;
+}
+.soc-icons:nth-child(1) {
+  transition-delay: 200ms;
+}
+.soc-icons:nth-child(2) {
+  transition-delay: 400ms;
+}
+.soc-icons:nth-child(3) {
+  transition-delay: 600ms;
+}
+.soc-icons:nth-child(4) {
+  transition-delay: 800ms;
+}
