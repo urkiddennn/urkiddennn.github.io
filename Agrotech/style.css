@@ -91,6 +91,10 @@ section {
     border-bottom: 2px solid #0d9276;
     font-weight: 700;
     word-spacing: 20px;
+    transition: 1s;
+}
+#Home p span:hover {
+    letter-spacing: 3px;
 }
 #Home .btn {
     width: 150px;
@@ -105,7 +109,7 @@ section {
     font-weight: 700;
     transition: 1s;
 }
-#Home .btn::hover {
+#Home .btn:hover {
     background: none;
     border: 2px solid #f3b95f;
 }
@@ -151,6 +155,16 @@ section {
     margin-top: 1rem;
     font-size: 2rem;
 }
+.compe p span {
+    color: #0d9276;
+    border-bottom: 2px solid #0d9276;
+    transition: 1s;
+    font-weight: 700;
+}
+.compe p span:hover {
+    color: black;
+    border-bottom: 0px;
+}
 .row {
     width: 50%;
     height: 100%;
@@ -192,8 +206,8 @@ section {
     align-items: center;
 }
 .email textarea {
-    width: 300px;
-    height: 100px;
+    width: 700px;
+    height: 90px;
     border: 2px solid gray;
 }
 .email button {
