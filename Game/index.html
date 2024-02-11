@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Read It Diosel</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="envelope-wrapper">
+                <div class="envelope">
+                    <div class="letter">
+                        <div class="text">
+                            <strong>Ante Diosel</strong>
+                            <p>
+                                First and foremost, this message expresses my
+                                gratitude to you. Thank you for accepting me for
+                                who I am and for being patient with me when I am
+                                sensitive sometimes. I am delighted and grateful
+                                to know you. Thank you, and I would like to know
+                                you more. Have a pleasant day, Ante Diosel.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="heart"></div>
+            </div>
+        </div>
+        <script>
+            const envelope = document.querySelector(".envelope-wrapper");
+            envelope.addEventListener("click", () => {
+                envelope.classList.toggle("flap");
+            });
+        </script>
+    </body>
+</html>
