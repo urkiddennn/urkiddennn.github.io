@@ -4527,10 +4527,9 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Sprite.Acts.Spawn,
 		C3.Plugins.Particles.Acts.SetVisible,
 		C3.Plugins.Text.Acts.TypewriterText,
-		C3.Plugins.Mouse.Cnds.OnObjectClicked,
-		C3.Plugins.System.Acts.GoToLayoutByName,
 		C3.Plugins.System.Cnds.OnCanvasSnapshot,
-		C3.Plugins.System.Acts.GoToLayout,
+		C3.Plugins.System.Acts.GoToLayoutByName,
+		C3.Plugins.Mouse.Cnds.OnObjectClicked,
 		C3.Plugins.Mouse.Cnds.IsOverObject,
 		C3.Plugins.Sprite.Acts.SetScale,
 		C3.Plugins.System.Cnds.Else
@@ -4691,6 +4690,7 @@ self.C3_ExpressionFuncs = [
 		() => 0,
 		() => "Fighting Dioskie, everything will be worth sa huli. I'm always here to support you. Keep that in mind.",
 		() => 5,
+		() => "Layout 2",
 		() => "Layout 1",
 		() => 3,
 		() => 2
