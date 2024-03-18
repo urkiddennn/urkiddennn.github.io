@@ -4527,7 +4527,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Sprite.Acts.Spawn,
 		C3.Plugins.Particles.Acts.SetVisible,
 		C3.Plugins.Text.Acts.TypewriterText,
-		C3.Plugins.System.Cnds.OnCanvasSnapshot,
+		C3.Plugins.System.Cnds.OnLoadFinished,
 		C3.Plugins.System.Acts.GoToLayoutByName,
 		C3.Plugins.Mouse.Cnds.OnObjectClicked,
 		C3.Plugins.Mouse.Cnds.IsOverObject,
