@@ -1,0 +1,115 @@
+:root {
+    --bg1: rgba(20, 20, 30, 0.8);
+    --bg2: rgba(22, 28, 50, 0.8);
+}
+
+* {
+    @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: "Roboto", sans-serif;
+    width: 100%;
+    height: 100vh;
+    background-image: url(bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home {
+    width: 70%;
+    height: 90%;
+    background: var(--bg1);
+}
+.content {
+    height: 92%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.help {
+    width: 250px;
+    height: 250px;
+    /*background: var(--bg2);*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.help svg {
+    width: 10px;
+    fill: darkgrey;
+}
+.type {
+    width: 100%;
+    height: 3%;
+    position: relative;
+    overflow: hidden;
+    background: var(--bg2);
+    padding: 1px;
+    display: flex;
+    align-items: center;
+}
+.input-bar {
+    width: 100%;
+    height: 5%;
+}
+.input-bar input {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    color: gray;
+    background: none;
+    font-weight: 700;
+}
+.type p {
+    color: var(--bg1);
+    z-index: 200;
+    font-weight: 800;
+    font-size: 10px;
+}
+.picture-logo {
+    width: 100%;
+    height: 50%;
+}
+.title {
+    z-index: 0;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 200px solid skyblue;
+    border-right: 300px solid transparent;
+}
+.shortcut {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.shortcut p {
+    font-size: x-small;
+    color: grey;
+    letter-spacing: 1.5px;
+    margin: 10px;
+}
+.shortcut p a {
+    text-decoration: none;
+    color: skyblue;
+}
+#message {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background: blue;
+    padding: 20px;
+}
+.container-message {
+    width: 100%;
+    height: 100%;
+}

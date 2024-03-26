@@ -1,0 +1,17 @@
+@media screen and (max-width: 500px) {
+  .home {
+    width: 90%;
+    height: 60%;
+  }
+  .title {
+    border-top: 100px solid skyblue;
+    border-right: 200px solid transparent;
+  }
+  .shortcut {
+    padding: 0;
+  }
+  .shortcut p {
+    font-size: 20px;
+    margin: 10px;
+  }
+}
