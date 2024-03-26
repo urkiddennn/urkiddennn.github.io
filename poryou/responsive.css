@@ -1,4 +1,8 @@
 @media screen and (max-width: 500px) {
+  :root {
+    --bg1: rgba(20, 20, 30, 0.8);
+    --bg2: rgba(22, 28, 50, 0.8);
+  }
   .home {
     width: 90%;
     height: 60%;
@@ -13,5 +17,22 @@
   .shortcut p {
     font-size: 20px;
     margin: 10px;
+  }
+  .input-bar {
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+  }
+  .type {
+    height: 5%;
+  }
+  .content {
+    height: 85%;
+  }
+  .input-bar button {
+    display: block;
+    border: none;
+    outline: none;
+    background: var(--bg2);
   }
 }
