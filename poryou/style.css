@@ -25,7 +25,7 @@ body {
     background: var(--bg1);
 }
 .content {
-    height: 92%;
+    height: 85%;
     width: 100%;
     display: flex;
     align-items: center;
@@ -46,7 +46,7 @@ body {
 }
 .type {
     width: 100%;
-    height: 3%;
+    height: 5%;
     position: relative;
     overflow: hidden;
     background: var(--bg2);
@@ -56,7 +56,7 @@ body {
 }
 .input-bar {
     width: 100%;
-    height: 5%;
+    height: 10%;
 }
 .input-bar input {
     width: 100%;
