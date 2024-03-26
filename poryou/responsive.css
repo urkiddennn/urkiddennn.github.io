@@ -34,5 +34,6 @@
     border: none;
     outline: none;
     background: var(--bg2);
+    color: grey;
   }
 }
